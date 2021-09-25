@@ -8,7 +8,7 @@ Version: 1.0
 License: GPL
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 body{background:#f5f5f5}
 ul{padding:0; margin:0; list-style:none}
 a{text-decoration:none; color:#2f2f2f}
@@ -136,10 +136,65 @@ img:hover{opacity:0.75}
   margin-right: 10px;
   font-size: 20px;
 }
-.fa-check-circle {
-  background: url() no-repeat center;
-  width: 20px;
-  height: 20px;
+.list {
+  margin-left: 9px;
+}
+.content-block__doctor {
+  display: flex;
+}
+@media (max-width: 992px) {
+  .content-block__doctor {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.doc {
+  margin-bottom: 13px;
+  max-width: 274px;
+  margin-top: 13px;
+}
+@media (max-width: 768px) {
+  .doc {
+    margin-bottom: 13px;
+    width: 100%;
+    height: auto;
+  }
+}
+#contentSection h2 {
+  font-weight: 700;
+  color: #cc0000;
+  font-size: 1.25em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.chceklist_doskonale {
+  padding-left: 32px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.chceklist_doskonale li {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 10px 0;
+}
+.chceklist_doskonale li::before {
+  content: '•';
+  font-weight: 800;
+  margin-right: 10px;
+}
+.guarantee {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+.guarantee:hover {
+  position: relative;
+  transform: scale(1.1) translate(20%);
+  left: 20px;
+  transition: .6s;
+  border: 1px solid black;
 }
 .latest_newsarea{float:left; display:inline; width:100%; background-color:#000; position:relative}
 .latest_newsarea span{ color:#fff; font-family:Oswald,sans-serif; font-size:15px; left:0; line-height:1.8em; margin-right:20px; overflow:hidden; padding:2px 18px 1px 19px; position:absolute; z-index:15}
